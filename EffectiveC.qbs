@@ -5,8 +5,11 @@ CppApplication {
 
     files: [
         "main.cpp",
+        "type_deduction.h",
         "type_info_before.h",
     ]
+
+    cpp.includePaths: ["/home/piekny/development/boost_1_58_0/"]
 
     Group {     // Properties for the produced executable
         fileTagsFilter: product.type
@@ -15,11 +18,12 @@ CppApplication {
 
     Properties {
         condition: qbs.toolchain.contains('gcc') && qbs.hostOS.contains("osx")
-        cpp.cxxFlags: [ "-std=c++11", "-stdlib=libc++" ]
+        cpp.cxxFlags: [ "-std=c++14", "-stdlib=libc++" ]
     }
     Properties {
         condition: qbs.toolchain.contains('gcc') && !qbs.hostOS.contains("osx")
-        cpp.cxxFlags: [ "-std=c++11" ]
+        cpp.cxxFlags: [ "-std=c++14" ]
     }
+
 }
 
