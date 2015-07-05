@@ -4,6 +4,7 @@ CppApplication {
     type: "application" // To suppress bundle generation on Mac
 
     files: [
+        "auto.h",
         "main.cpp",
         "type_deduction.h",
         "type_info_before.h",
