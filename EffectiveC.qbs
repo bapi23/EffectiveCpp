@@ -5,6 +5,7 @@ CppApplication {
 
     files: [
         "auto.h",
+        "brace_initialazers.h",
         "main.cpp",
         "type_deduction.h",
         "type_info_before.h",
