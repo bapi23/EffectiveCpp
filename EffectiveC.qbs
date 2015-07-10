@@ -4,11 +4,15 @@ CppApplication {
     type: "application" // To suppress bundle generation on Mac
 
     files: [
+        "alias_declaration.h",
         "auto.h",
         "brace_initialazers.h",
+        "enums.h",
         "main.cpp",
+        "null_ptr.h",
         "type_deduction.h",
         "type_info_before.h",
+        "type_traits.h",
     ]
 
     cpp.includePaths: ["/home/piekny/development/boost_1_58_0/"]

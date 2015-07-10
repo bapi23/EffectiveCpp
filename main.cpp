@@ -4,6 +4,10 @@
 #include "type_deduction.h"
 #include "auto.h"
 #include "brace_initialazers.h"
+#include "null_ptr.h"
+#include "alias_declaration.h"
+#include "type_traits.h"
+#include "enums.h"
 
 using namespace std;
 
@@ -17,6 +21,12 @@ int main()
     auto_test();
     std::cout << "------------- brace_initialazers ---------" << std::endl;
     brace_initializers();
-
+    std::cout << "------------- null_ptr ---------" << std::endl;
+    null_ptr();
+    std::cout << "------------- type_traits ---------" << std::endl;
+    type_traits();
+    std::cout << "------------- enums ---------" << std::endl;
+    type_traits();
+    enums();
 }
 
