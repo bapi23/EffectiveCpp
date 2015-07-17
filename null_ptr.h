@@ -3,11 +3,13 @@
 
 void fun1(int i)
 {
+    (void)i;
     std::cout<<"fun1"<<std::endl;
 }
 
 void fun1(void* i)
 {
+    (void)i;
     std::cout << "fun2" << std::endl;
 }
 

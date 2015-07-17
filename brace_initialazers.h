@@ -38,7 +38,7 @@ void brace_initializers()
     Widget w4{10, 5.05};
     Widget w5{w2};
 
-    Widget2 w20{10, 5.0};
+    //Widget2 w20{10, 5.0}; error in c++14
 
     Widget w6{};
     Widget w7{{}};

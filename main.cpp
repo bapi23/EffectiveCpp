@@ -8,6 +8,12 @@
 #include "alias_declaration.h"
 #include "type_traits.h"
 #include "enums.h"
+#include "delete.h"
+#include "const_iterator.h"
+#include "constexpr.h"
+#include "unique_ptr.h"
+#include "shared_ptr.h"
+#include "pimpl.h"
 
 using namespace std;
 
@@ -26,7 +32,16 @@ int main()
     std::cout << "------------- type_traits ---------" << std::endl;
     type_traits();
     std::cout << "------------- enums ---------" << std::endl;
-    type_traits();
     enums();
+    std::cout << "------------- delete ---------" << std::endl;
+    delete_();
+    std::cout << "------------- const_iterator ---------" << std::endl;
+    const_iterator();
+    std::cout << "------------- unique_ptr ---------" << std::endl;
+    unique_ptr_();
+    std::cout << "------------- shared_ptr ---------" << std::endl;
+    shared_ptr_();
+    std::cout << "------------- pimpl ---------" << std::endl;
+    pimpl();
 }
 

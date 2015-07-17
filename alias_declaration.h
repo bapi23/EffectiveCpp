@@ -45,7 +45,9 @@ struct Dependent
 void alias_declaration()
 {
     FP p;
+    (void)p;
     FunctionPointer fp2;
+    (void)fp2;
 
     Ptr<int> a;
     Ptr_old<int>::Type a2;
