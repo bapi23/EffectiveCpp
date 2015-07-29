@@ -14,6 +14,9 @@
 #include "unique_ptr.h"
 #include "shared_ptr.h"
 #include "pimpl.h"
+#include "perfect_forwarding.h"
+#include "async.h"
+#include "condition_variable.h"
 
 using namespace std;
 
@@ -43,5 +46,11 @@ int main()
     shared_ptr_();
     std::cout << "------------- pimpl ---------" << std::endl;
     pimpl();
+    std::cout << "------------- perfect forwarding ---------" << std::endl;
+    perfect_forwarding();
+    std::cout << "------------- async ---------" << std::endl;
+    async();
+    std::cout << "------------- condition variable ---------" << std::endl;
+    condition_varaible();
 }
 

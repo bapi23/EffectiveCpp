@@ -14,7 +14,7 @@ class Test_old
 {
     friend class Friend;
 public:
-    Test_old(){};
+    Test_old(){}
     Test_old(const Test& t){ (void)t;}
     Test_old& operator = (const Test_old& t){ (void)t; return *this; }
 };

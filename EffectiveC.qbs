@@ -5,14 +5,17 @@ CppApplication {
 
     files: [
         "alias_declaration.h",
+        "async.h",
         "auto.h",
         "brace_initialazers.h",
+        "condition_variable.h",
         "const_iterator.h",
         "constexpr.h",
         "delete.h",
         "enums.h",
         "main.cpp",
         "null_ptr.h",
+        "perfect_forwarding.h",
         "pimpl.cpp",
         "pimpl.h",
         "shared_ptr.h",
@@ -28,6 +31,8 @@ CppApplication {
         fileTagsFilter: product.type
         qbs.install: true
     }
+
+    cpp.dynamicLibraries: "pthread"
 
     Properties {
         condition: qbs.toolchain.contains('gcc') && qbs.hostOS.contains("osx")
