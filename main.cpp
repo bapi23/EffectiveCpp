@@ -17,8 +17,8 @@
 #include "perfect_forwarding.h"
 #include "async.h"
 #include "condition_variable.h"
+#include "promise.h"
 
-using namespace std;
 
 int main()
 {
@@ -52,5 +52,7 @@ int main()
     async();
     std::cout << "------------- condition variable ---------" << std::endl;
     condition_varaible();
+    std::cout << "------------- promise ---------" << std::endl;
+    promise_();
 }
 

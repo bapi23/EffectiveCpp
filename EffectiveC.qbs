@@ -18,6 +18,7 @@ CppApplication {
         "perfect_forwarding.h",
         "pimpl.cpp",
         "pimpl.h",
+        "promise.h",
         "shared_ptr.h",
         "type_deduction.h",
         "type_info_before.h",
