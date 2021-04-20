@@ -41,9 +41,6 @@ decltype(auto) authAndAccess(Container&& c, Index i)
     return std::forward<decltype(c[i])>(c[i]);
 }
 
-template<typename T>
-class TypeDisplayer;
-
 void type_deduction()
 {
     int x = 27;
@@ -98,7 +95,6 @@ void type_deduction()
     container.at(0)->at(0);
 
     decltype(auto) returnResult = authAndAccess(container, 0);
-    //TypeDisplayer<decltype(returnResult)> cl;
 
     std::cout << "return type:" << boost::typeindex::type_id_with_cvr<decltype(container[0])>().pretty_name() << std::endl;
     std::cout << "return type:" << boost::typeindex::type_id_with_cvr<decltype(returnResult)>().pretty_name() << std::endl;

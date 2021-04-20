@@ -22,7 +22,7 @@ void type_info_before()
     map.insert(std::make_pair(std::type_index(typeid(float)), typeid(float).name()));
     map.insert(std::make_pair(std::type_index(typeid(bool)), typeid(bool).name()));
 
-    for(auto& a: map)
+    for(const auto& a: map)
     {
         std::cout << a.second << std::endl;
     }

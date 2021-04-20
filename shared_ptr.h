@@ -38,5 +38,5 @@ void shared_ptr_()
     std::cout << "shared count without duplication:" << testGet.use_count() << std::endl;
 
     Test_Shared_Without_Duplication bad;
-    //auto really_bad = bad.get();
+    //auto really_bad = bad.get(); crash
 }

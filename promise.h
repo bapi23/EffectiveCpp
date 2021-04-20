@@ -19,6 +19,7 @@ void waitFunction()
 
 void promise_()
 {
+//    Run as threads:
 //    std::thread t1(detectFunction);
 //    std::thread t2(waitFunction);
 //    t1.join();

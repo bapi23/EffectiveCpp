@@ -58,5 +58,5 @@ void alias_declaration()
 
     Dead<int,int> d;
 
-    //Dependent_old<bool>::k g;
+    //Dependent_old<bool>::k g; will not compile
 }

@@ -42,10 +42,10 @@ void perfect_forwarding()
     //fwd(l.totalLength);
 
     f_initialiser({1,2,3});
-    //fwd_initializer_list({1,2,3});
+    //fwd_initializer_list({1,2,3}); doesn't compile because initializer_list can't be deduced
+    fwd_initializer_list(std::initializer_list<int>{1,2,3});
     auto in = {1,2,3};
     fwd_initializer_list(in);
 
-    //fwd("ss");
-
+    //fwd("ss"); static assert
 }
