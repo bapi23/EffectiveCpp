@@ -1,3 +1,0 @@
-/home/bpiekny/development/projects/EffectiveC-/build/CMakeFiles/rebuild_cache.dir
-/home/bpiekny/development/projects/EffectiveC-/build/CMakeFiles/effectivecpp.dir
-/home/bpiekny/development/projects/EffectiveC-/build/CMakeFiles/edit_cache.dir
