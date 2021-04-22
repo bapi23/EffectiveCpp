@@ -5,6 +5,11 @@
 #include "variable_template.h"
 #include "std_lib.h"
 
+[[deprecated("Replaced by func(int)")]]
+void deprecated_func()
+{
+    std::cout << "deprecated func";
+}
 
 int main(){
     std::cout << "===== decltype(auto) ====" << std::endl;
@@ -17,4 +22,5 @@ int main(){
     variable_template::main_();
     std::cout << "==== std_lib ====" << std::endl;
     std_lib::main_();
+    deprecated_func();
 }
