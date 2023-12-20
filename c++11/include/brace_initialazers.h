@@ -24,11 +24,11 @@ public:
 void brace_initializers()
 {
     long long int b = 4;
-    int a = {b};
+    //int a = {b}; error: cannot be narrowed from type 'long long' to 'int' in initializer list
     int c = b;
     (void)c;
     (void)b;
-    (void)a;
+    //(void)a;
 
 
     Widget w0();
