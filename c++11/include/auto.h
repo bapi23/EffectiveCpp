@@ -13,8 +13,8 @@ void auto_test()
     std::function<void(int)> f = &function;
     auto f_auto = &function;
 
-    std::cout << "size of function in std::function "<< sizeof(f) << std::endl;
-    std::cout << "size of function in auto " << sizeof(f_auto) << std::endl;
+    std::cout << "size of function using std::function "<< sizeof(f) << std::endl;
+    std::cout << "size of function using auto " << sizeof(f_auto) << std::endl;
     std::cout << "type of std::function " << boost::typeindex::type_id_with_cvr<decltype(f)>().pretty_name() << std::endl;
     std::cout << "type of auto " << boost::typeindex::type_id_with_cvr<decltype(f_auto)>().pretty_name() << std::endl;
     

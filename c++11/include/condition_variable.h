@@ -43,7 +43,7 @@ void worker3()
     data += "worker 3 finished";
 }
 
-int condition_varaible()
+void condition_varaible()
 {
     std::thread t1(worker1), t2(worker2), t3(worker3);
     t1.join();

@@ -30,7 +30,7 @@ int fwd(T&& p)
 }
 
 template<typename T>
-int fwd_initializer_list(T&& p)
+void fwd_initializer_list(T&& p)
 {
     f_initialiser(std::forward<T>(p));
 }
