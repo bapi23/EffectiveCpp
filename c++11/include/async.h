@@ -39,6 +39,7 @@ void async()
 
     std::cout << "thread deffered: " << std::endl;
     std::future<int> fut_deffered = std::async(std::launch::deferred, fun_long);
+    //deferred == lazy evaluation - might evaluate when future::get is called!
     std::cout << "is deffered? :" << bool(fut_deffered.wait_for(0s) == std::future_status::deferred) << std::endl;
     int result3 = fut_deffered.get();
 

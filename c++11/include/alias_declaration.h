@@ -11,6 +11,9 @@ using FP = void (*)(int);
 template<typename T>
 using Ptr = std::shared_ptr<std::pair<int, T>>;
 
+template<typename T>
+using uniq = std::unique_ptr<T>;
+
 template<typename DEADBEEF, typename Zorro>
 using Dead = std::vector<std::map<int, std::shared_ptr<std::tuple<int, DEADBEEF, Zorro>>>>;
 
