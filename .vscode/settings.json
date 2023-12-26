@@ -79,6 +79,7 @@
         "type_traits": "cpp",
         "utility": "cpp",
         "format": "cpp",
-        "coroutine": "cpp"
+        "coroutine": "cpp",
+        "ranges": "cpp"
     }
 }

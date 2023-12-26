@@ -1,6 +1,6 @@
 #include <cassert>
 #include <memory>
-
+#include <iostream>
 namespace generalized_lambda_captures{
 
 
@@ -16,6 +16,13 @@ void main_(){
         return x+2;
     }();
     std::cout << "x = 4 captured by reference: " << x << std::endl;
+
+    int a = 67;
+    auto xLam = [&] -> int{
+        a = a+45;
+        return a;
+    };
+    std::cout << "a: " << xLam() << std::endl;
 }
 
 }

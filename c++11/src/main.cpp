@@ -18,10 +18,13 @@
 #include "async.h"
 #include "condition_variable.h"
 #include "promise.h"
+#include "condition_variable_notify_issue.h"
 
 
 int main()
 {
+    std::cout << "------------- cond var 2 --------------" <<std::endl;
+    condition_variable_tests2();
     std::cout << "------------- type_info --------------" << std::endl;
     type_info_before();
     std::cout << "------------- type_deduction ---------" << std::endl;
@@ -30,10 +33,10 @@ int main()
     auto_test();
     std::cout << "------------- brace_initialazers ---------" << std::endl;
     brace_initializers();
-    // std::cout << "------------- null_ptr ---------" << std::endl;
-    // null_ptr();
-    // std::cout << "------------- type_traits ---------" << std::endl;
-    // type_traits();
+    std::cout << "------------- null_ptr ---------" << std::endl;
+    null_ptr();
+    std::cout << "------------- type_traits ---------" << std::endl;
+    type_traits();
     // std::cout << "------------- enums ---------" << std::endl;
     // enums();
     // std::cout << "------------- delete ---------" << std::endl;

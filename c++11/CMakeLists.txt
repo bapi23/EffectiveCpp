@@ -14,4 +14,4 @@ endif()
 target_link_libraries(effectivecpp pthread)
 target_include_directories(effectivecpp PRIVATE include)
 
-target_compile_features(effectivecpp PRIVATE cxx_std_14)
+target_compile_features(effectivecpp PRIVATE cxx_std_23)

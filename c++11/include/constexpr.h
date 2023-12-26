@@ -24,6 +24,8 @@ int powcpp14(int base, int exp) noexcept
     return result;
 }
 
+constinit auto num = powcpp14(4, 2);
+
 void constexpr_()
 {
     constexpr auto numConds = 4;

@@ -54,3 +54,16 @@ void condition_varaible()
 }
 
 
+
+// std::condition_variable con;
+// std::mutex mut;
+
+// void worker() {
+//     {
+        
+//     std::unique_lock<std::mutex> ul(mut);
+//     //...do the job
+//     ul.unlock();
+
+//     con.notify_one();
+// }
