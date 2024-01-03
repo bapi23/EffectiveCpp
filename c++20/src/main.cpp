@@ -2,6 +2,7 @@
 #include "jthread.hpp"
 #include "coroutines.hpp"
 #include "ranges.hpp"
+#include "concepts.hpp"
 
 int main(){
     std::cout << "designated test" << std::endl;
@@ -10,4 +11,5 @@ int main(){
     coroutines_test();
     coroutines_test2();
     ranges_test();
+    concepts_test();
 }
