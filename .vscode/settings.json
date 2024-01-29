@@ -80,6 +80,10 @@
         "utility": "cpp",
         "format": "cpp",
         "coroutine": "cpp",
-        "ranges": "cpp"
+        "ranges": "cpp",
+        "expected": "cpp",
+        "semaphore": "cpp",
+        "stop_token": "cpp",
+        "cinttypes": "cpp"
     }
 }

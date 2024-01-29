@@ -51,6 +51,10 @@ void ranges_test(){
     //std::ranges::partition(a, [](const Copyable& c){ return c.num % 2 == 0; });
     //std::ranges::copy(c, std::ostream_iterator<Copyable>(std::cout, " "));
 
+    std::ranges::sort(c, std::greater{}, &Copyable::num);
+
+    std::ranges::copy(c, std::ostream_iterator<decltype(c[0])>(std::cout, " "));
+
     auto is_odd = [](const auto& c){ return c.num % 2 == 0; };
     for(auto& z: c | std::ranges::views::filter(is_odd) | std::views::reverse)
         std::cout << z << "\n";

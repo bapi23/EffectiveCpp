@@ -31,10 +31,9 @@ public:
 
     A& operator=(A&& a){
         if (this != &a){
-            *raw = *a.raw;
+            raw = a.raw;
 
             //fast resource release (might be helpful in case of more expensive resources)
-            delete a.raw;
             a.raw = nullptr;
         }
         return *this;
